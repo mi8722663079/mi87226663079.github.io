@@ -1,0 +1,192 @@
+html *{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+body{
+  margin: 10px;
+}
+.parent{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid red;
+  border: none;
+  border-radius: 14px;
+
+}
+.children{
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 50px;
+  border-radius: 14px;
+  box-shadow: 0px 12px 20px 5px rgba(33, 85, 120, 0.28);
+  
+}
+.children:hover{
+  transform: scale(1.02);
+  transition:  1s;
+}
+.c1{
+  background-color: hsl(263, 55%, 52%);
+  color:white;
+  position: relative;
+  z-index: 0;
+}
+.c2{
+  background-color: hsl(217, 19%, 35%);
+}
+.c4{
+  background-color: hsl(219, 29%, 14%);
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  position: relative;
+  z-index: 3;
+}
+.info-card{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 3;
+  
+}
+h1{
+  font-size: 1.9rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+.verify{
+  margin-top: 5px;
+  font-weight: 600;
+  opacity: 50%;
+  font-size: 0.9rem;
+}
+.paragraph{
+  opacity: 70%;
+  font-size: 1rem;
+  line-height: 20px;
+}
+.name{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+.name:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.imgs{
+  margin-right: 17px;
+}
+.qoute{
+  position: absolute;
+  width: 140px;
+  height: 150px;
+  right: 5%;
+  top: 0px;
+  z-index: 1;
+}
+.i1,.i2,.i3,.i4,.i5{
+  border-radius: 50%;
+  border: 3px solid;
+  width:85% !important;
+  height: 85% !important;
+}
+.Is:hover{
+  cursor: pointer;
+  transform: scale(1.09);
+  transition: 1s;
+}
+
+.t1,.t2 ,.t4{
+  color: white;
+}
+.ic1,.ic2{
+  color: white;
+}
+.ic4{
+  color: hsl(0, 0%, 81%);
+}
+.t5,.t3{
+  color: hsl(217, 19%, 35%);
+}
+.ic4 .verify , .ic2 .verify{
+  color: hsl(0, 0%, 81%);
+}
+.ic5 .verify, .ic3 .verify{
+  color: hsl(217, 19%, 35%);
+}
+.p1{
+  color: hsl(263, 55%, 80%);
+}
+.p2{
+  color: hsl(217, 19%, 80%);
+}
+.p4{
+  color: hsl(219, 29%, 65%);
+}
+.p5,.p3{
+  color: hsl(217, 19%, 55%);
+}
+.i1{
+  border-color: hsl(263, 55%, 70%);
+}
+.i2{
+  border-color: hsl(0, 0%, 70%);
+}
+.i3,.i5{
+  border-color: hsl(217, 19%, 80%);
+}
+.i4{
+  color: hsl(263, 81%, 65%);
+}
+.master-card{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+  
+}
+.c5{
+  flex-basis: 20%;
+}
+.card1, .card2{
+  flex-basis: 50%;
+}
+
+
+
+
+@media (min-width: 1000px){
+  body{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .parent{
+    flex-direction: row;
+
+}
+  .card1, .card2{
+    display: flex;
+
+  }
+  .c1,.c4{
+    flex-basis: 60%;
+    margin:20px;
+  }
+  .c2,.c3{
+    flex-basis: 40%;
+    margin:20px;
+  }
+  .c5{
+    margin-left:20px
+  }
+  }
