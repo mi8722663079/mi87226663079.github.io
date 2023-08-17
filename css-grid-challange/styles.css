@@ -121,12 +121,12 @@ img {
   z-index: 0;
 }
 .collage-1{
-  width: 33%;
+  width: 29%;
   height: 43%;
   transform: rotate(-3deg);
 }
 .collage-3{
-  width: 35%;
+  width: 31%;
   height: 45%;
   transform: rotate(3deg)
 }
