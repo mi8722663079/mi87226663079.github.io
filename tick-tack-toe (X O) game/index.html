@@ -26,25 +26,25 @@
           <i class="fa-solid fa-x turquoise" style="margin-right: 20px"></i>
           <p class="turquoise">Player 1, you are up!</p>
         </div>
-        <div class="menu">
-          <button>
+        <div class="menu" data-id="menu1">
+          <button class="action">
             Actions
             <i class="fa-solid fa-chevron-down" style="margin-left: 5px"></i>
           </button>
           <div class="items border hidden" data-id="menu-popover">
-            <button class="reset-btn">Reset</button>
-            <button class="newround-btn">New Round</button>
+            <button data-id="reset-btn">Reset</button>
+            <button data-id="newround-btn">New Round</button>
           </div>
         </div>
-        <div id="1" class="game-box shadow"></div>
-        <div id="2" class="game-box shadow"></div>
-        <div id="3" class="game-box shadow"></div>
-        <div id="4" class="game-box shadow"></div>
-        <div id="5" class="game-box shadow"></div>
-        <div id="6" class="game-box shadow"></div>
-        <div id="7" class="game-box shadow"></div>
-        <div id="8" class="game-box shadow"></div>
-        <div id="9" class="game-box shadow"></div>
+        <div id="1" class="game-box shadow" data-id="box"></div>
+        <div id="2" class="game-box shadow" data-id="box"></div>
+        <div id="3" class="game-box shadow" data-id="box"></div>
+        <div id="4" class="game-box shadow" data-id="box"></div>
+        <div id="5" class="game-box shadow" data-id="box"></div>
+        <div id="6" class="game-box shadow" data-id="box"></div>
+        <div id="7" class="game-box shadow" data-id="box"></div>
+        <div id="8" class="game-box shadow" data-id="box"></div>
+        <div id="9" class="game-box shadow" data-id="box"></div>
         <div class="score shadow" style="background-color: #2cc4bf">
           Player 1 <span data-id="p1-stats">0 wins</span>
         </div>

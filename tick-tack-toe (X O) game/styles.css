@@ -9,14 +9,14 @@
 html,
 body {
   font-size: 16px;
+  height: 100%;
   background-color: #1a2a32;
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
 }
 /* shared utility classes */
 .border {
@@ -46,8 +46,6 @@ main {
 .main-grid {
   display: flex;
   display: grid;
-  width: auto;
-  height: auto;
   grid-template: 50px repeat(3, 80px) 60px / repeat(3, 80px);
   gap: 5px 5px;
 }
@@ -65,7 +63,7 @@ main {
     transform: translatex(-20px);
   }
   100% {
-    opacity: 200%;
+    opacity: 100%;
     transform: translatex(0);
   }
 }
@@ -109,16 +107,13 @@ main {
   top: 120%;
   z-index: 3;
 }
-.reset-btn:hover,
-.reset-btn:active,
-.newround-btn:hover,
-.newround-btn.active {
-  text-decoration: underline;
+.items button {
   cursor: pointer;
-}
-.reset-btn,
-.newround-btn {
   background-color: transparent;
+}
+.items button:hover,
+.items button:active {
+  text-decoration: underline;
 }
 button {
   background-color: rgba(211, 211, 211, 0.07);
