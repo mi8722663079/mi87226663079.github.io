@@ -87,11 +87,16 @@ main {
   font-size: 1.8rem;
   animation: 0.6s ease-in-out turn-icon-animation;
 }
+.fa-o,
+.fa-x {
+  animation: 0.3s ease-in-out turn-icon-animation;
+}
 .menu {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .items {
   background-color: #203139;

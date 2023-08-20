@@ -22,9 +22,9 @@
   <body>
     <main>
       <div class="main-grid">
-        <div class="player-turn">
-          <i class="fa-solid fa-x turquoise" style="margin-right: 20px"></i>
-          <p class="turquoise">Player 1, you are up!</p>
+        <div class="player-turn turquoise">
+          <i class="Picon fa-solid fa-x" style="margin-right: 20px"></i>
+          <p class="current">Player 1, you are up!</p>
         </div>
         <div class="menu" data-id="menu1">
           <button class="action">
@@ -67,8 +67,8 @@
     </footer>
     <div class="winner-sc hidden">
       <div class="winner">
-        <p>Player 1 wins!</p>
-        <button>Play again</button>
+        <p class="win1">Player 1 wins!</p>
+        <button class="again-btn" onclick="App.againBtn()">Play again</button>
       </div>
     </div>
     <script src="script.js"></script>
