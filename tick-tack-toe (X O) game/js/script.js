@@ -1,3 +1,4 @@
+import View from "./view.js";
 const App = {
   $: {
     menu: document.querySelector("[data-id='menu1']"),
@@ -43,7 +44,6 @@ const App = {
         winner = 2;
       }
     });
-
     return {
       status: moves.length === 9 || winner != null ? "complete" : "in-progress",
       winner,
@@ -106,6 +106,7 @@ const App = {
             App.$.modal.classList.toggle("hidden");
           } else if (status.winner === 2) {
             App.$.win.textContent = "Player 2 wins!";
+            App.$.modal.classList.toggle("hidden");
           } else if (App.state.moves.length === 9) {
             App.$.modal.classList.toggle("hidden");
             App.$.win.textContent = "Thats a tie!";
@@ -119,3 +120,9 @@ const App = {
   },
 };
 window.addEventListener("load", App.init());
+
+function init() {
+  const view = new View();
+  console.log(view.$.box);
+}
+window.addEventListener("load", init());
