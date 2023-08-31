@@ -1,4 +1,4 @@
-import View from "./view.js";
+// import View from "./view.js";
 const App = {
   $: {
     menu: document.querySelector("[data-id='menu1']"),
@@ -121,8 +121,8 @@ const App = {
 };
 window.addEventListener("load", App.init());
 
-function init() {
-  const view = new View();
-  console.log(view.$.box);
-}
-window.addEventListener("load", init());
+// function init() {
+//   const view = new View();
+//   console.log(view.$.box);
+// }
+// window.addEventListener("load", init());
