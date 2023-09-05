@@ -91,6 +91,12 @@ main {
 .fa-x {
   animation: 0.3s ease-in-out turn-icon-animation;
 }
+.player-turn .fa-o,
+.player-turn .fa-x {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  animation: 0.6s ease-in-out turn-icon-animation;
+}
 .menu {
   position: relative;
   display: flex;

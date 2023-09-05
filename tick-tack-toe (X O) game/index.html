@@ -22,9 +22,12 @@
   <body>
     <main>
       <div class="main-grid">
-        <div class="player-turn turquoise">
-          <i class="Picon fa-solid fa-x" style="margin-right: 20px"></i>
-          <p class="current">Player 1, you are up!</p>
+        <div class="player-turn">
+          <i
+            class="Picon fa-solid fa-x turquoise"
+            style="margin-right: 15px"
+          ></i>
+          <p class="current turquoise">Player 1, you are up!</p>
         </div>
         <div class="menu" data-id="menu1">
           <button class="action" data-id="Actions">
@@ -49,10 +52,10 @@
           Player 1 <span data-id="p1-stats">0 wins</span>
         </div>
         <div class="score shadow" style="background-color: #d3d3d3">
-          Ties <span>0 ties</span>
+          Ties <span data-id="tie-stats">0 ties</span>
         </div>
         <div class="score shadow" style="background-color: #f2b147">
-          Player 2 <span>0 wins</span>
+          Player 2 <span data-id="p2-stats">0 wins</span>
         </div>
       </div>
     </main>
@@ -71,6 +74,6 @@
         <button class="again-btn">Play again</button>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
